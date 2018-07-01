@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestHelloWorld(t *testing.T) {
-	if helloworld() != "Helo World!!" {
+	if helloworld() != "Hello World!!" {
 		t.Fatal("Test fail")
 	}
 }
