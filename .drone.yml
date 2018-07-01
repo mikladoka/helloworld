@@ -1,6 +1,12 @@
+workspace:
+  base: /go
+  path: src/github.com/mikladoka/helloworld
+
 pipeline:
   build:
-  image: golang:latest
+    image: golang:latest
     commands:
+      - pwd
+      - echo $GOPATH
       - go get
       - go test
